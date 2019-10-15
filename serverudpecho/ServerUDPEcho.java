@@ -5,13 +5,14 @@
  */
 package serverudpecho;
 
+import serverudpecho.UDPEcho;
 import java.net.SocketException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
  *
- * @author pc15
+ * @author Accoun Utente
  */
 public class ServerUDPEcho {
 
@@ -21,11 +22,11 @@ public class ServerUDPEcho {
     public static void main(String[] args) {
         try {
             // TODO code application logic here
-            UDPEcho echoServer= new UDPEcho(7);
+            UDPEcho echoServer = new UDPEcho(7);
             echoServer.run();
         } catch (SocketException ex) {
             Logger.getLogger(ServerUDPEcho.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
+
 }

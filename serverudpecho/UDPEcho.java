@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author pc15
+ * @author Accoun Utente
  */
 public class UDPEcho {
 
