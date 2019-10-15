@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package clientudp;
+package clientudpecho1;
 
 import java.io.IOException;
 import java.net.SocketException;
@@ -26,7 +26,7 @@ public class ClientUDP {
         
         IP_address="127.0.0.1";
         UDP_port=7;
-        request="ciao";
+        request="Questa sara' la risposta da parte del server!";
         
         client = new UDPClientSocket();
         answer = client.sendAndRecive(request, IP_address, UDP_port);
